@@ -1,0 +1,50 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+{% load static %}
+<html>
+	<head>	
+		<title>glossy-login-form Website Template | Home :: w3layouts</title>
+		<link href="{% static 'css/style.css' %}" rel='stylesheet' type='text/css' />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		<!--webfonts-->
+		<link href="{% static 'http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' %} rel='stylesheet' type='text.css'/>
+		<!--//webfonts-->
+		<script>
+			function myFunction()
+			{
+				alert("welcome");
+			}
+		</script>
+	</head>
+	<body>
+			<!--start-login-form-->
+			<div class="login-form">
+					<h1>Member login</h1>
+						<form method="post" action="login">
+							{% csrf_token %}
+							<span>
+								<input type="text" class="user"  name="uname">
+							</span>
+							<span>
+					        	<input type="password" class="lock"  name="pwd" >
+					        </span>
+							<div class="submit">
+								<input type="submit" value="LOGIN"  >
+								{% for i in messages %}
+				<h2>{{i}}</h2>
+				{% endfor %}
+							</div>
+							<a href="Register">Register Here</a>
+							
+						</form>
+
+			</div>
+	</body>
+</html>
+

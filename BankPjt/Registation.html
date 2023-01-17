@@ -1,0 +1,217 @@
+<!--Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+{% load static %}
+<html lang="zxx">
+<head>
+<title>Online Banking a Banking Category Bootstrap Responsive Web Template | Home :: w3layouts</title>
+<!-- Meta tag Keywords -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Online Banking Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!--// Meta tag Keywords -->
+<!-- css files -->
+<link href="{% static 'css1/bootstrap.css' %}" rel="stylesheet" type="text/css" media="all" /> <!-- Bootstrap-Core-CSS -->
+<link href="{% static 'css1/style.css' %}" rel="stylesheet" type="text/css" media="all" /> <!-- Style-CSS -->
+<link rel="stylesheet" href="{% static 'css1/font-awesome.css' %}"> <!-- Font-Awesome-Icons-CSS -->
+<link rel="stylesheet" href="{% static 'css1/flexslider.css' %}" type="text/css" media="all" /> <!-- Banner-Slider-CSS -->
+<!-- //css files -->
+<link rel="stylesheet" type="text/css" href="{% static 'css1/demo.css' %}"/>
+<!-- online-fonts -->
+<link href="//fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800&amp;subset=latin-ext" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Ubuntu+Condensed&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext" rel="stylesheet">
+<!-- //online-fonts -->
+</head>
+<body>
+
+<!-- navigation -->
+<div class="nav-links">
+		<div class="header-w3l">
+			<div class="container">
+				<a class="navbar-brand" href="index.html"><h1><span>Online</span> Banking</h1></a>
+				<div class="call-w3l">
+					<img src="{% static 'images/call.png' %}">
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+		<nav class="navbar navbar-inverse">
+
+		<div >
+
+		</div>
+	</nav>
+			<div class="clearfix"></div>
+</div>
+<!-- //navigation -->
+<!-- banner section -->
+
+<div class="banner-slider">
+				<div class="container">
+						<!--Slider-->
+					<form action="Register" method="post" >
+    {% csrf_token %}
+    <h1>Registration</h1>
+    <table border="2" style="margin-left:200px;font-size:32px;">
+        <tr>
+            <td>Acount no</td>
+            <td><input type="number" name="accno"></td>
+        </tr>
+        <tr>
+            <td>Name</td>
+            <td><input type="text" name="name"></td>
+        </tr>
+        <tr>
+            <td>Address</td>
+            <td><input type="text" name="addr"></td>
+        </tr>
+         <tr>
+            <td>Deposit</td>
+            <td><input type="number" name="bal"></td>
+        </tr>
+        <tr>
+            <td>User Name</td>
+            <td><input type="text" name="uname"></td>
+        </tr>
+        <tr>
+            <td>Password</td>
+            <td><input type="text" name="pwd"></td>
+        </tr>
+        <tr>
+            <td colspan="2" style="padding-left:100px ">
+                <input type="submit" value="Insert">
+            </td>
+        </tr>
+    </table>
+</form>
+				<div class="callbacks_container">
+
+				</div>
+				<!-- //Slider -->
+
+				</div>
+</div>
+<!-- Modal1 -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+	<div class="modal-dialog">
+		<!-- Modal content-->
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<img src="images/g7.jpg" alt=" " class="img-responsive">
+					<h5>Donec lobortis pharetra dolor</h5>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, rds which don't look even slightly believable..</p>
+			</div>
+		</div>
+		<!-- //Modal content-->
+	</div>
+</div>
+<!-- //Modal1 -->
+<!-- //banner section -->
+<!-- about -->
+<div class="about" id="about">
+	<div class="container">
+		<h3 class="w3l-title"><span>About</span> Us</h3>
+		<div class="w3-agileits-about-grids">
+			<div class="col-md-5 agile-about-right">
+				<img src="images/3.png" alt="" />
+			</div>
+			<div class="col-md-7 agile-about-left">
+				<h3 class="w3l-sub">Offering the most </h3>
+				<p class="sub-p">competitive rates and fees</p>
+				<p class="sub-p2">Lorem ipsum dolor sit amet, do eiusmod magna aliqua</p>
+				<p class="sub-p3">Lorem ipsum dolor sit amet, do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+</div>
+
+
+<!--stats-->
+<!-- js files -->
+<!-- js -->
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script> <!-- Necessary-JavaScript-File-For-Bootstrap -->
+<!-- //js -->
+<!-- js for banner -->
+<!-- responsiveslider -->
+	<script src="js/responsiveslides.min.js"></script>
+		<script>
+			// You can also use "$(window).load(function() {"
+			$(function () {
+			  // Slideshow 4
+			  $("#slider3").responsiveSlides({
+				auto: true,
+				pager:true,
+				nav:false,
+				speed: 500,
+				namespace: "callbacks",
+				before: function () {
+				  $('.events').append("<li>before event fired.</li>");
+				},
+				after: function () {
+				  $('.events').append("<li>after event fired.</li>");
+				}
+			  });
+
+			});
+		 </script>
+	<!-- //responsiveslider -->
+	<!-- stats -->
+<script type="text/javascript" src="js/numscroller-1.0.js"></script>
+<!-- //stats -->
+<!-- /js for banner -->
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+<!-- start-smoth-scrolling -->
+<!-- smooth scrolling -->
+<script src="js/SmoothScroll.min.js"></script>
+<!-- //smooth scrolling -->
+<!-- smooth-scrolling-of-move-up -->
+<script type="text/javascript">
+	$(document).ready(function() {
+		/*
+		var defaults = {
+			containerID: 'toTop', // fading element id
+			containerHoverID: 'toTopHover', // fading element hover id
+			scrollSpeed: 1200,
+			easingType: 'linear'
+		};
+		*/
+
+		$().UItoTop({ easingType: 'easeOutQuart' });
+
+	});
+</script>
+<!-- //smooth-scrolling-of-move-up -->
+<!-- video-js -->
+<script src="js/jquery.vide.min.js"></script>
+<!-- //video-js -->
+<!--gallery-js -->
+<script src="js/jquery.picEyes.js"></script>
+				<script>
+					$(function(){
+						//picturesEyes($('.demo li'));
+						$('.demo li').picEyes();
+					});
+				</script>
+<!--//gallery-js -->
+<!-- //js files -->
+
+</body>
+</html>
